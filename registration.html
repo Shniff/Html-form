@@ -138,13 +138,30 @@
         <input type="file" name="file-upload" id="" accept=".jpg,.png,.gif">
 
         <div><select name="year-level" id="year-level">
-            <option value="">--Select Year Level--</option>
+            <option value="" disabled selected>--Select Year Level--</option>
             <option value="1">First Year</option>
             <option value="2">Second Year</option>
             <option value="3">Third Year</option>
             <option value="4">Fourth Year</option>
          </select>
         </div> 
+
+        <div>
+            <select name="year-level" id="year-level">
+                <option value="">--Select Year Level--</option>
+                <optgroup label="Undergrad">
+                   <option value="1">First Year</option>
+                   <option value="2">Second Year</option>
+                   <option value="3" selected>Third Year</option>
+                   <option value="4">Fourth Year</option>
+                </optgroup>
+                <optgroup label="SHS">
+                   <option value="1">First Year</option>
+                   <option value="2">Second Year</option>
+                </optgroup>
+             </select>
+
+        </div>
 
 
 
