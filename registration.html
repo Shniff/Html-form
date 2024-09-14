@@ -99,65 +99,81 @@
 
         
         <! -- Text Field -- >
-       <div class="flex-field">
-
-        <label for="username" class="grid-label">Username</label>
-        <input type="text" name="username" value="John Doe" required placeholder="What's your name?" minlength="3" maxlength="10" class="grid-input">
-
-    </div>
+        <div class="flex-field">
+            <label for="username" class="grid-label">Username</label>
+            <input type="text" name="username" value="John Doe" required placeholder="What's your name?" minlength="3" maxlength="10" class="grid-input">
+        </div>
 
         <! -- Email Field -- >
         <div class="flex-field">
-            <label for="username" class="grid-label">Email</label>
+            <label for="email" class="grid-label">Email</label>
             <input type="email" name="username" placeholder="Put your email" class="grid-input">
         </div>
 
         <! -- Password Field -- >
         <div class="flex-field">
-            <label for="username" class="grid-label">Password</label>
+            <label for="password" class="grid-label">Password</label>
             <input type="password" name="password" placeholder="Put your password" class="grid-input">
         </div>
 
         <! -- Number Field -- >
-        <input type="number" name="number" class="grid-input">
+        <div class="flex-field">
+            <label for="number" class="grid-label">Number</label>
+            <input type="number" name="number" class="grid-input">
+        </div>
 
         <! -- Hidden Field -- >
         <input type="hidden" value="abc1234" name="secret">
 
-        <textarea name="address" id="" rows="5"></textarea>
+        <div class="flex-field">
+            <label for="textarea" class="grid-label">Text Area</label>
+            <textarea name="address" id="" rows="5"></textarea>
+        </div>
 
-        <input type="date" name="date">
-        <input type="datetime-local" name="date local">
+        <div class="flex-field">
+            <label for="date" class="grid-label">Date</label>
+            <input type="date" name="date">
+        </div>
 
-
-        <input type="button" value="Button">
-
-        <input type="Reset" value="Reset">
+        <div class="flex-field">
+            <label for="datelocal" class="grid-label">Date Local</label>
+            <input type="datetime-local" name="date local">
+        </div>
 
 
         
-        <input type="checkbox" name="Skills" id="" value="Programming" <label for "Skills">Programming</label>
-        <input type="checkbox" name="Skills" id=""  value="Java" <label for "Skills">Java</label>
-        <input type="checkbox" name="Skills" id=""  value="Web" checked <label for "Skills">Web</label>
-
-        <div>
-        <input type="radio" name="Skills" id="" value="Programming" <label for "Skills">Programming</label>
-        <input type="radio" name="Skills" id=""  value="Java" <label for "Skills">Java</label>
-        <input type="radio" name="Skills" id=""  value="Web" checked <label for "Skills">Web</label>
+        <div class="flex-field">
+            <label for="checkbox" class="grid-label">Checkbox</label>
+            <input type="checkbox" name="Skills" id="" value="Programming" <label for "Skills">Programming</label>
+            <input type="checkbox" name="Skills" id=""  value="Java" <label for "Skills">Java</label>
+            <input type="checkbox" name="Skills" id=""  value="Web" checked <label for "Skills">Web</label>
         </div>
 
-        <input type="file" name="file-upload" id="" accept=".jpg,.png,.gif">
+        <div class="flex-field">
+            <label for="radio" class="grid-label">Radio</label>
+            <input type="radio" name="Skills" id="" value="Programming" <label for "Skills">Programming</label>
+            <input type="radio" name="Skills" id=""  value="Java" <label for "Skills">Java</label>
+            <input type="radio" name="Skills" id=""  value="Web" checked <label for "Skills">Web</label>
+        </div>
 
-        <div><select name="year-level" id="year-level">
+        <div class="flex-field">
+            <label for="file" class="grid-label">File</label>
+            <input type="file" name="file-upload" id="" accept=".jpg,.png,.gif">
+        </div>
+
+        <div class="flex-field">
+            <label for="dropdown" class="grid-label">Dropdown</label>
+            <select name="year-level" id="year-level">
             <option value="" disabled selected>--Select Year Level--</option>
             <option value="1">First Year</option>
             <option value="2">Second Year</option>
             <option value="3">Third Year</option>
             <option value="4">Fourth Year</option>
-         </select>
+            </select>
         </div> 
 
-        <div>
+        <div class="flex-field">
+            <label for="groupdropdown" class="grid-label">Group Dropdown</label>
             <select name="year-level" id="year-level">
                 <option value="">--Select Year Level--</option>
                 <optgroup label="Undergrad">
@@ -171,13 +187,23 @@
                    <option value="2">Second Year</option>
                 </optgroup>
              </select>
-
         </div>
 
+        <div class="flex-field">
+            <label for="button" class="grid-label">Button</label>
+            <input type="button" value="Button">
+        </div>
 
+        <div class="flex-field">
+            <label for="reset" class="grid-label">Reset</label>
+            <input type="Reset" value="Reset">
+        </div>
 
         <! -- Submit Field -- >
-        <div><input type="submit" value="Click Submit"></div>
+        <div class="flex-field">
+            <label for="submit" class="grid-label">Submit</label>
+            <input type="submit" value="Click Submit">
+        </div>
 
     
 
