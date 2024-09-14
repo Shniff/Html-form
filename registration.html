@@ -97,18 +97,29 @@
         <h1>REGISTRATION</h1>
     <form action="action.php">
 
-        <!--
+        
         <! -- Text Field -- >
-        <input type="text" name="username" value="John Doe" required placeholder="What's your name?" minlength="3" maxlength="10" >
+       <div class="flex-field">
+
+        <label for="username" class="grid-label">Username</label>
+        <input type="text" name="username" value="John Doe" required placeholder="What's your name?" minlength="3" maxlength="10" class="grid-input">
+
+    </div>
 
         <! -- Email Field -- >
-        <input type="email" name="username" placeholder="Put your email">
+        <div class="flex-field">
+            <label for="username" class="grid-label">Email</label>
+            <input type="email" name="username" placeholder="Put your email" class="grid-input">
+        </div>
 
         <! -- Password Field -- >
-        <input type="password" name="password" placeholder="Put your password">
+        <div class="flex-field">
+            <label for="username" class="grid-label">Password</label>
+            <input type="password" name="password" placeholder="Put your password" class="grid-input">
+        </div>
 
         <! -- Number Field -- >
-        <input type="number" name="number">
+        <input type="number" name="number" class="grid-input">
 
         <! -- Hidden Field -- >
         <input type="hidden" value="abc1234" name="secret">
@@ -123,7 +134,7 @@
 
         <input type="Reset" value="Reset">
 
-        -->
+
         
         <input type="checkbox" name="Skills" id="" value="Programming" <label for "Skills">Programming</label>
         <input type="checkbox" name="Skills" id=""  value="Java" <label for "Skills">Java</label>
