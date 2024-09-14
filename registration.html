@@ -97,7 +97,7 @@
         <h1>REGISTRATION</h1>
     <form action="action.php">
         <! -- Text Field -- >
-        <input type="text" name="username" value="John Doe" required placeholder="What's your name?" maxlength="10" min="3">
+        <input type="text" name="username" value="John Doe" required placeholder="What's your name?" minlength="3" maxlength="10" >
 
         <! -- Email Field -- >
         <input type="email" name="username" placeholder="Put your email">
@@ -112,6 +112,10 @@
         <input type="hidden" value="abc1234" name="secret">
 
         <textarea name="address" id="" rows="5"></textarea>
+
+        <input type="date" name="date">
+        <input type="datetime-local" name="date local">
+
 
         <! -- Submit Field -- >
         <input type="submit" value="Submit">
